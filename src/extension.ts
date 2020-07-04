@@ -9,8 +9,14 @@ export function activate(context: vscode.ExtensionContext) {
 		const emailCommand = `cat ${emailFilePath} | sendmail -vt`;
 		cp.exec(emailCommand, (error, _stdout, stderr) => {
 			if (error) {
-				vscode.window.showErrorMessage(`Error: ${stderr}`);
-				console.error(`error: ${error}`);
+				let errorMessage = `Error: ${stderr}`;
+
+				if (stderr.toLowerCase().includes("untitled")) {
+					errorMessage = "File must be saved before it can be sent.";
+				}
+
+				vscode.window.showErrorMessage(errorMessage);
+				console.error(`Error: ${error}`);
 				return;
 			}
 
