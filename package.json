@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:emailer.helloWorld"
+		"onCommand:emailer.sendEmail"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "emailer.helloWorld",
-				"title": "Hello World"
+				"command": "emailer.sendEmail",
+				"title": "Send Email"
 			}
 		]
 	},
