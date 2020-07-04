@@ -10,18 +10,19 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Extension "emailer" is now active');
 
-	// TODO: Start postfix here
+	// TODO: Start postfix here if postfix isn't running
 
 	const disposable = vscode.commands.registerCommand('emailer.sendEmail', () => {
 		// The code you place here will be executed every time your command is executed
 
-		cp.exec('ls', (err, stdout, stderr) => {
-			console.log('stdout: ' + stdout);
-			console.log('stderr: ' + stderr);
-			if (err) {
-				console.log('error: ' + err);
-			}
-		});
+		const emailCommand = "cat /Users/pranthiksamal/Downloads/testeml.eml | sendmail -t";
+		cp.exec(emailCommand, (err, stdout, stderr) => {
+      console.log("stdout: " + stdout);
+      console.log("stderr: " + stderr);
+      if (err) {
+        console.log("error: " + err);
+      }
+    });
 
 		vscode.window.showInformationMessage('Email sent!');
 	});
@@ -30,5 +31,5 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-	// TODO: Turn off postfix here
+	// TODO: Shut down postfix if it's still running
 }
