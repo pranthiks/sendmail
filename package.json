@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "sendmail.sendEmail",
-				"title": "Send Mail: Deliver Email",
+				"title": "Send Mail: Send Email",
 				"group": "send-mail"
 			}
 		]

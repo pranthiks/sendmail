@@ -4,7 +4,7 @@ Visual Studio Code extension. This extension routes an email over the Internet t
 
 ## Features
 
-Send an EML to all specified recipients.
+Send an email to all specified recipients from VSCode.
 
 ![](images/command-palette.png)
 
@@ -14,7 +14,7 @@ This extension uses [sendmail](http://www.postfix.org/sendmail.1.html) for the a
 
 ## Known Issues
 
-* The file needs to be saved to the filesystem before you can use the "Send Email" command.
+* The file needs to be saved to the file system before you can use the "Send Email" command.
 
 ## Release Notes
 
