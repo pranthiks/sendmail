@@ -6,6 +6,10 @@ Visual Studio Code extension. This extension routes an email over the Internet t
 
 Send an email to all specified recipients from VSCode.
 
+![](images/sendmail-demo.gif)
+
+**Command Palette**:
+
 ![](images/command-palette.png)
 
 ## Requirements
