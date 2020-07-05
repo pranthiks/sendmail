@@ -3,7 +3,7 @@ import * as cp from 'child_process';
 
 export function activate(context: vscode.ExtensionContext) {
 
-	const command = "emailer.sendEmail";
+	const command = "sendmail.sendEmail";
 	const commandHandler = () => {
 		const emailFilePath = vscode.window.activeTextEditor?.document.fileName;
 		const emailCommand = `cat ${emailFilePath} | sendmail -vt`;

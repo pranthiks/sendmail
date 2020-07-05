@@ -1,7 +1,7 @@
 {
-	"name": "emailer",
-	"displayName": "Emailer",
-	"description": "Sending EML files",
+	"name": "sendmail",
+	"displayName": "Send Mail",
+	"description": "Sending email files",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.46.0"
@@ -10,14 +10,15 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:emailer.sendEmail"
+		"onCommand:sendmail.sendEmail"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "emailer.sendEmail",
-				"title": "Send Email"
+				"command": "sendmail.sendEmail",
+				"title": "Send Mail: Deliver Email",
+				"group": "send-mail"
 			}
 		]
 	},
