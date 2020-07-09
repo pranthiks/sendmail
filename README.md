@@ -1,5 +1,7 @@
 # Send Mail
 
+![](https://img.shields.io/badge/Release-1.0.0-blue.svg?style=flat-square) ![](https://img.shields.io/badge/vscode-1.0.0-blue.svg?style=flat-square)
+
 Visual Studio Code extension. This extension routes an email over the Internet to specified recipients. It uses the [sendmail](http://www.postfix.org/sendmail.1.html) MTA to do the email routing. Currently this extension only works on Linux and macOS.
 
 ## Features
