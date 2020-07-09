@@ -3,12 +3,27 @@
 	"displayName": "Send Mail",
 	"description": "Sending email files",
 	"version": "0.0.1",
+	"publisher": "pranthiks",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pranthiks/sendmail"
+  },
+  "bugs": {
+    "url": "https://github.com/pranthiks/sendmail/issues"
+	},
+	"license": "MIT",
 	"categories": [
 		"Other"
 	],
+  "keywords": [
+    "send",
+		"mail",
+		"email",
+		"EML"
+  ],
 	"activationEvents": [
 		"onCommand:sendmail.sendEmail"
 	],
