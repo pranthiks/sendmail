@@ -23,7 +23,8 @@
 		"mail",
 		"email",
 		"EML"
-  ],
+	],
+	"icon": "images/sendmail-icon.png",
 	"activationEvents": [
 		"onCommand:sendmail.sendEmail"
 	],
