@@ -1,7 +1,7 @@
 {
 	"name": "sendmail",
 	"displayName": "Send Mail",
-	"description": "Sending email files",
+	"description": "Sending EML files",
 	"version": "1.0.0",
 	"publisher": "pranthiks",
 	"engines": {
